@@ -1,0 +1,313 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    transition: all ease .4s;
+}
+
+:root {
+    --primaryColor: #ed8613
+}
+
+.orange {
+    color: var(--primaryColor);
+}
+
+button {
+    padding: 12px 22px;
+    background-color: var(--primaryColor);
+    margin: 30px 0px;
+    text-align: center;
+    color: aliceblue;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #c06e10;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.11);
+}
+
+
+/* =================  nav ============== */
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+}
+
+.prandName {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 5px 15px;
+    font-size: 18px;
+}
+
+nav li:hover {
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+nav .icons i {
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+nav .icons i:hover {
+    color: #ed8613;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);
+}
+
+/* ======================= main =================== */
+main {
+    padding-top: 80px;
+    display: flex;
+}
+
+main .left {
+    width: 50%;
+    padding-left: 10%;
+}
+
+main .left h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+
+main .icons span {
+    border-radius: 50%;
+    background-color: rgb(39, 38, 38);
+    color: aliceblue;
+    margin: 0px 7px;
+    padding: 10px
+}
+
+main .icons span:hover {
+    background-color: var(--primaryColor);
+    cursor: pointer;
+}
+
+main .right {
+    width: 50%;
+}
+
+main .right span {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+}
+
+/* ===================== pupular ==================*/
+.popularSection h2 {
+    padding-left: 10%;
+    font-size: 40px;
+    font-weight: 700;
+    color: RGB(51, 51, 51);
+    margin-bottom: 30px;
+}
+
+.popular {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin-bottom: 150px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 0px;
+    position: relative;
+    height: 470px;
+}
+
+.flexContainer:nth-child(1) .imageContainer {
+    background-color: #fde6f2;
+}
+
+.flexContainer:nth-child(2) .imageContainer {
+    background-color: #eedfd9;
+}
+
+.flexContainer:nth-child(3) .imageContainer {
+    background-color: #faeaed;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    height: 370px;
+    transition: all ease .3s;
+    position: absolute;
+    width: 100%;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.11);
+    bottom: 0;
+}
+
+.imageContainer:hover {
+    height: 470px;
+}
+
+.imageContainer img {
+    width: 60%;
+    height: 400px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.flexContainer .discription {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    height: 80px;
+    font-size: 25px;
+    font-weight: 700;
+    width: 100%;
+}
+
+/* ======================most selling======== */
+.discriptionMostselling {
+    width: 80%;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.discriptionMostselling h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 12px 0px;
+}
+
+.discriptionMostselling p {
+    line-height: 30px;
+    font-size: 20px;
+    color: RGB(118, 114, 104);
+}
+
+
+.mostSelling {
+    width: 80%;
+    display: flex;
+    justify-self: center;
+    margin-bottom: 70px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.cardContainer section {
+    width: 45%;
+    height: 350px;
+}
+
+.cardContainer section h4 {
+    color: RGB(51, 51, 51);
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
+.cardContainer section h3 {
+    color: RGB(51, 51, 51);
+    font-size: 28px;
+    font-weight: 700;
+    color: RGB(51, 51, 51);
+    margin-top: 20px;
+}
+
+.cardContainer section h3 s {
+    font-size: 24px;
+    color: RGB(118, 114, 104);
+
+}
+
+.cardContainer section p {
+    color: RGB(118, 114, 104);
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+
+.cardContainer section img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* ====================discounts============== */
+.discounts {
+    background-color: #fde6f2;
+    padding: 80px 0px;
+    width: 80%;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.discounts input {
+    display: inline;
+    padding: 4px;
+    width: 250px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+
+
+/* ===============footer============ */
+footer {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    align-items: center;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    padding: 5px 15px;
+    font-size: 18px;
+}
+
+footer .icons span {
+    border-radius: 50%;
+    background-color: rgb(39, 38, 38);
+    color: aliceblue;
+    margin: 0px 7px;
+    padding: 10px
+}
+
+footer .icons span:hover {
+    background-color: var(--primaryColor);
+    cursor: pointer;
+}
