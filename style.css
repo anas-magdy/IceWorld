@@ -1,7 +1,12 @@
+/* any animation on the top used by index.js file */
+/* any  opacity used by any element with 0 value it mean that will appear with animation*/
+
 * {
     padding: 0px;
     margin: 0px;
     transition: all ease .6s;
+    font-family: "Poppins", sans-serif;
+    color: white;
 }
 
 :root {
@@ -18,9 +23,14 @@ button {
     margin: 30px 0px;
     text-align: center;
     color: aliceblue;
-    font-size:18px;
+    font-size: 18px;
     border: none;
     border-radius: 3px;
+}
+
+body {
+    background-color: black;
+    color: rgb(250, 250, 250);
 }
 
 button:hover {
@@ -348,7 +358,7 @@ main .right span {
 
 .discounts input {
     display: inline;
-    padding: 6px;
+    padding: 5px;
     width: 250px;
     font-size: 25px;
     transform: translateY(4px);
